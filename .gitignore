@@ -1,0 +1,47 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+ENV/
+
+# Build and packaged outputs
+build/
+dist/
+**/build/
+**/dist/
+*.exe
+*.dll
+*.pyd
+*.zip
+
+# Databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+**/data/backups/
+
+# Node, editor, OS, and tool caches
+node_modules/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.workbuddy/
+*.log

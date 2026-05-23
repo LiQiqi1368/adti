@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>全自动答题系统 — 用户操作手册</title>
+<style>
+body { font-family: 'Microsoft YaHei', '微软雅黑', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; color: #1e293b; }
+h1 { color: #1e293b; font-size: 26px; border-bottom: 2px solid #4f6ef7; padding-bottom: 8px; }
+h2 { color: #4f6ef7; font-size: 20px; margin-top: 30px; }
+h3 { color: #334155; font-size: 16px; margin-top: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+th, td { border: 1px solid #e2e8f0; padding: 8px 12px; text-align: left; }
+th { background: #f1f5f9; font-weight: bold; }
+code { background: #f1f5f9; padding: 2px 6px; border-radius: 3px; font-size: 14px; }
+blockquote { border-left: 4px solid #4f6ef7; margin: 10px 0; padding: 8px 16px; background: #f8fafc; color: #64748b; }
+hr { border: none; border-top: 1px solid #e2e8f0; margin: 20px 0; }
+</style>
+</head>
+<body>
+<h1 id="_1">全自动答题系统 — 用户操作手册</h1>
+<blockquote>
+<p><strong>版本：</strong> v2.0 定制版<br />
+<strong>作者：</strong> 阿飞<br />
+<strong>官网：</strong> www.aiopcl.wiki  </p>
+</blockquote>
+<hr />
+<h2 id="_2">📦 软件安装</h2>
+<h3 id="_3">系统要求</h3>
+<ul>
+<li>Windows 10 / Windows 11</li>
+<li>无需安装 Python 环境</li>
+</ul>
+<h3 id="_4">首次使用</h3>
+<ol>
+<li>将收到的 <code>答题助手</code> 文件夹解压到任意位置</li>
+<li>双击 <code>答题助手.exe</code> 启动软件</li>
+<li>首次打开会弹出<strong>授权激活窗口</strong></li>
+</ol>
+<hr />
+<h2 id="_5">🔑 授权激活</h2>
+<h3 id="_6">获取授权码</h3>
+<ol>
+<li>打开软件 → 弹出授权窗口</li>
+<li>窗口中显示<strong>您的机器码</strong>（如 <code>521B-248C-1400-6FF2-...</code>）</li>
+<li>点击 <strong>"复制"</strong> 按钮</li>
+<li>将机器码发给开发者 → 开发者返回一个<strong>授权码</strong></li>
+</ol>
+<h3 id="_7">激活授权码</h3>
+<ol>
+<li>将收到的授权码粘贴到输入框</li>
+<li>点击 <strong>"激活授权码"</strong> 按钮</li>
+<li>激活成功 → 自动进入主界面</li>
+<li>底部状态栏显示 <code>✅ 已授权</code></li>
+</ol>
+<blockquote>
+<p>⚠ 激活一次后，下次打开软件自动验证，无需再次激活</p>
+</blockquote>
+<hr />
+<h2 id="_8">🖥 界面说明</h2>
+<h3 id="_9">顶部标题栏</h3>
+<ul>
+<li>左侧：软件名称 + 作者 + 版本信息</li>
+<li>右侧：<strong>运行状态</strong>（就绪 / 运行中 / 已停止）</li>
+</ul>
+<h3 id="_10">左侧面板</h3>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>快捷操作</strong></td>
+<td>全自动答题、继续答题、停止、考试回顾、跑题库、清空题库</td>
+</tr>
+<tr>
+<td><strong>登录配置</strong></td>
+<td>输入考试系统的账号和密码（可留空）</td>
+</tr>
+<tr>
+<td><strong>循环配置</strong></td>
+<td>设置答题轮数（0=无限循环）、选择要答的题库</td>
+</tr>
+<tr>
+<td><strong>辅助模式</strong></td>
+<td>模式切换 + 手动操作工具</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">右侧面板</h3>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>当前答案</strong></td>
+<td>显示当前题目匹配到的答案</td>
+</tr>
+<tr>
+<td><strong>当前题目</strong></td>
+<td>显示正在作答的题目内容</td>
+</tr>
+<tr>
+<td><strong>日志输出</strong></td>
+<td>实时显示软件运行日志</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_12">底部状态栏</h3>
+<ul>
+<li>左侧：机器码</li>
+<li>中间：免责声明</li>
+<li>右侧：授权状态</li>
+</ul>
+<hr />
+<h2 id="_13">🚀 快速开始</h2>
+<h3 id="_14">方式一：全自动答题（推荐）</h3>
+<ol>
+<li>填写<strong>目标网址</strong>（辅助模式区域）</li>
+<li>填写<strong>账号密码</strong>（登录配置区域，可选）</li>
+<li>设置<strong>循环轮数</strong>和<strong>题库</strong></li>
+<li>点击 <strong>"▶ 全自动答题"</strong></li>
+<li>软件自动完成：打开网页 → 登录 → 选题 → 答题 → 交卷 → 循环</li>
+</ol>
+<h3 id="_15">方式二：辅助答题（半自动）</h3>
+<ol>
+<li>填写目标网址 → 点击 <strong>"打开"</strong></li>
+<li>手动登录</li>
+<li>切换到需要的模式：</li>
+<li><strong>录题模式</strong>：手动浏览题目，自动记录答案到题库</li>
+<li><strong>辅助答题模式</strong>：自动匹配题库答案并填入</li>
+<li>点击 <strong>"开始"</strong></li>
+</ol>
+<hr />
+<h2 id="_16">🔄 循环答题说明</h2>
+<table>
+<thead>
+<tr>
+<th>设置</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轮数 = 0</td>
+<td>无限循环，直到手动点击停止</td>
+</tr>
+<tr>
+<td>轮数 = 1</td>
+<td>只答一轮</td>
+</tr>
+<tr>
+<td>轮数 = 5</td>
+<td>连续答 5 轮</td>
+</tr>
+</tbody>
+</table>
+<p><strong>循环过程：</strong>
+1. 打开网页 → 自动登录
+2. 选择指定题库 → 开始考试
+3. 逐题作答（匹配题库）
+4. 交卷 → 检查分数
+5. 分数≤98.5 → 自动回顾错题并补录
+6. 点击"再考一次" → 进入下一轮</p>
+<hr />
+<h2 id="_17">🛠 其他功能</h2>
+<h3 id="_18">考试回顾</h3>
+<ul>
+<li>手动触发回顾上一轮答题的错题</li>
+<li>点击 <strong>"考试回顾"</strong> 按钮即可</li>
+</ul>
+<h3 id="_19">跑题库</h3>
+<ul>
+<li>遍历整个题库，检查每道题的答案有效性</li>
+<li>点击 <strong>"跑题库"</strong> 按钮</li>
+</ul>
+<h3 id="_20">清空题库</h3>
+<ul>
+<li>删除数据库中的所有题目</li>
+<li>点击 <strong>"清空题库"</strong> 按钮（慎用）</li>
+</ul>
+<hr />
+<h2 id="_21">❓ 常见问题</h2>
+<h3 id="q">Q：启动后弹出"未授权"怎么办？</h3>
+<p>将窗口中的<strong>机器码</strong>复制发给开发者，获取授权码后粘贴激活。</p>
+<h3 id="q_1">Q：点击全自动答题没反应？</h3>
+<p>检查是否填写了<strong>目标网址</strong>，以及是否已<strong>激活授权</strong>。</p>
+<h3 id="q_2">Q：怎么停止答题？</h3>
+<p>点击 <strong>"⏹ 停止"</strong> 按钮，当前题目答完后会停止。</p>
+<h3 id="q_3">Q：答完一轮后软件不动了？</h3>
+<p>检查网络连接是否正常，或点击 <strong>"停止"</strong> 后重新开始。</p>
+<h3 id="q_4">Q：选项匹配不准确？</h3>
+<p>软件会自动收录错题并更新题库，多答几轮准确率会越来越高。</p>
+<hr />
+<h2 id="_22">⚠ 免责声明</h2>
+<p>本软件仅供学习交流，定制版使用者需自行承担一切责任，与原作者无关。严禁用于考试作弊等违规行为。</p>
+<hr />
+<p><em>如有其他问题，请联系开发者。</em></p>
+</body>
+</html>
